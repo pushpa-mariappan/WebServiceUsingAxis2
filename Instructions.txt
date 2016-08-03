@@ -1,0 +1,17 @@
+Axis2 is not supported directly but as plugins.
+Axis2 has to be downloaded from http://archive.apache.org/dist/axis/axis2/java/core/1.6.2/
+axis-1.6.2-bin.zip, extract it in separate location.
+In eclipse, go to windows, preference and add axi2 preference, give the extracted location and add axis2.
+Create dynamic web project.
+Create the simple service class. No need of SEI,SIB. Only a simple class without annotation.
+Run the service class choosing axis2 server.(new-other-webservice-axis2).
+Now the server will run as axis2 server, which will generate the annotation in .CLASS files.
+Access the server using http:\\localhost:8080\applicationname
+click the service name,
+you will get the wsdl.
+For Client:
+create again a dynamic web project
+on src click new-other-webserviceclient-wsdl location and axis2 server
+this will generate the stub 
+create the TestClient class.
+run client as java application and get the output printed.
